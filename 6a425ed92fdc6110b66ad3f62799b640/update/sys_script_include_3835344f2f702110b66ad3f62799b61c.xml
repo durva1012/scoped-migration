@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_852107_enterpr_0.Override_to</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>Override_to</name>
+        <script><![CDATA[var Override_to = Class.create();
+Override_to.prototype =Object.extendsObject(global.AbstractAjaxProcessor, {
+    ov: function() {
+		var u_choice_1;
+	var ab = this.getParameter('sysparm_number');
+	
+	var xx = new GlideRecord('x_852107_enterpr_0_governance_item');
+	xx.addQuery('sys_id', ab);
+	xx.query();
+	if(xx.next()) {
+		return xx.u_choice_1;
+	}
+	
+    },
+
+    type: 'Override_to'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-08 06:32:50</sys_created_on>
+        <sys_id>3835344f2f702110b66ad3f62799b61c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Override_to</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_script_include_3835344f2f702110b66ad3f62799b61c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-14 11:38:23</sys_updated_on>
+    </sys_script_include>
+</record_update>

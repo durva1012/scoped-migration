@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_reference_6</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>get email</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+var gjax = new GlideAjax('getmember');                                                     // name of the Script Include
+gjax.addParam('sysparm_name','member');                                            // function name of Script Include
+gjax.addParam('sysparm_group',g_form.getValue('u_reference_6'));
+gjax.getXML(callback);
+
+function callback(response)
+{
+
+
+var answ = response.responseXML.documentElement.getAttribute('answer');
+g_form.addInfoMessage('Value obtnd was'+answ);
+g_form.setValue('u_glide_list_7',answ);
+
+}
+
+   //Type appropriate comment here, and begin script below
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-16 04:53:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>540c69292f856910b66ad3f62799b668</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>get email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_script_client_540c69292f856910b66ad3f62799b668</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-16 05:16:55</sys_updated_on>
+        <table>x_852107_enterpr_0_engagement</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

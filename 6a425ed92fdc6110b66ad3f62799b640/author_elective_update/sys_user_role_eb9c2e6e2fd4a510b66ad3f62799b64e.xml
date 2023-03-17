@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_852107_enterpr_0.ATS Approver</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>ATS Approver</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-13 05:20:38</sys_created_on>
+        <sys_id>eb9c2e6e2fd4a510b66ad3f62799b64e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_852107_enterpr_0.ATS Approver</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_user_role_eb9c2e6e2fd4a510b66ad3f62799b64e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-13 05:20:38</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</application>
+        <file_path/>
+        <instance_id>82c6b842dba857807e55d5b0cf961978</instance_id>
+        <instance_name>dev51043</instance_name>
+        <name>sys_user_role_eb9c2e6e2fd4a510b66ad3f62799b64e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>x_852107_enterpr_0.ATS Approver</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>ATS Approver</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-01-13 05:20:38</sys_created_on><sys_id>eb9c2e6e2fd4a510b66ad3f62799b64e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_852107_enterpr_0.ATS Approver</sys_name><sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package><sys_policy/><sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope><sys_update_name>sys_user_role_eb9c2e6e2fd4a510b66ad3f62799b64e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-01-13 05:20:38</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>1930037088</payload_hash>
+        <record_name>x_852107_enterpr_0.ATS Approver</record_name>
+        <reverted_from/>
+        <source>2a425ed92fdc6110b66ad3f62799b642</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-13 05:20:38</sys_created_on>
+        <sys_id>84cc2e6e2fd4a510b66ad3f62799b666</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>185a992a81b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-13 05:20:38</sys_updated_on>
+        <type>Role</type>
+        <update_guid>cccc2e6ee8d4a5101d1524190cc01d65</update_guid>
+        <update_guid_history>cccc2e6ee8d4a5101d1524190cc01d65:1930037088</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_852107_enterpr_0.ATS Approver">89afaea22f18a510b66ad3f62799b60b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-13 05:33:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>6cefb09c617342eab29c48c0bf2afbc4</sys_id>
+        <sys_metadata>eb9c2e6e2fd4a510b66ad3f62799b64e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_852107_enterpr_0.ATS Approver</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_scope_delete display_value="">d3f1171382404d42b1b1e4f5196360e4</sys_scope_delete>
+        <sys_update_name>sys_user_role_eb9c2e6e2fd4a510b66ad3f62799b64e</sys_update_name>
+        <sys_update_version display_value="sys_user_role_eb9c2e6e2fd4a510b66ad3f62799b64e">84cc2e6e2fd4a510b66ad3f62799b666</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-13 05:33:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

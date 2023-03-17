@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_852107_enterpr_0.asa_override</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>asa_override</name>
+        <script><![CDATA[var asa_override = Class.create();
+asa_override.prototype = {
+   status : function() {
+	var abc = new GlideRecord('x_852107_enterpr_0_governance_item');
+	abc.addQuery('sys_id', current.sys_id);
+	abc.query();
+	while(abc.next()){
+		current.u_choice_4 = 'sad uploaded (approval in progress)';
+		current.update();
+	}
+	var pqr = new GlideRecord('x_852107_enterpr_0_engagement');
+	pqr.addQuery('u_reference_1', current.sys_id);
+	pqr.query();
+	while(pqr.next()){
+		pqr.u_choice_9 = 'requesting approval';
+		pqr.update();
+	}
+
+	
+},	
+
+    type: 'asa_override'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-24 12:23:41</sys_created_on>
+        <sys_id>88c570d22fe46110b66ad3f62799b63f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>asa_override</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_script_include_88c570d22fe46110b66ad3f62799b63f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-24 13:23:31</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</application>
+        <file_path/>
+        <instance_id>82c6b842dba857807e55d5b0cf961978</instance_id>
+        <instance_name>dev51043</instance_name>
+        <name>sys_script_include_88c570d22fe46110b66ad3f62799b63f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_852107_enterpr_0.asa_override&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;asa_override&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var asa_override = Class.create();
+asa_override.prototype = {
+   status : function() {
+	var abc = new GlideRecord('x_852107_enterpr_0_governance_item');
+	abc.addQuery('sys_id', current.sys_id);
+	abc.query();
+	while(abc.next()){
+		current.u_choice_4 = 'sad uploaded (approval in progress)';
+		current.update();
+	}
+	var pqr = new GlideRecord('x_852107_enterpr_0_engagement');
+	pqr.addQuery('u_reference_1', current.sys_id);
+	pqr.query();
+	while(pqr.next()){
+		pqr.u_choice_9 = 'requesting approval';
+		pqr.update();
+	}
+
+	
+},	
+
+    type: 'asa_override'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-01-24 12:23:41&lt;/sys_created_on&gt;&lt;sys_id&gt;88c570d22fe46110b66ad3f62799b63f&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;asa_override&lt;/sys_name&gt;&lt;sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0"&gt;6a425ed92fdc6110b66ad3f62799b640&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Enterprise Governance Architecture"&gt;6a425ed92fdc6110b66ad3f62799b640&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_88c570d22fe46110b66ad3f62799b63f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-01-24 13:23:31&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-506332750</payload_hash>
+        <record_name>asa_override</record_name>
+        <reverted_from/>
+        <source>2a425ed92fdc6110b66ad3f62799b642</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-24 13:23:31</sys_created_on>
+        <sys_id>f4c4c9122f286110b66ad3f62799b614</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>185e3f2b2a40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-24 13:23:31</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>ecc4c9123d286110b101a5d0565e5813</update_guid>
+        <update_guid_history>ecc4c9123d286110b101a5d0565e5813:-506332750,286d709af7e461100362a4f7d252addb:1024548963,91dc341a4de461108741ca083c526bc0:1884118516,530bb4d6f7e4611048d1791f6b6660ec:1024548963,5817b016c7e461102161e6864873d6f5:1103429113</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-25 05:40:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>03265ff9ffd344fe94123e73e8fdea89</sys_id>
+        <sys_metadata>88c570d22fe46110b66ad3f62799b63f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>asa_override</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_scope_delete display_value="">d3f1171382404d42b1b1e4f5196360e4</sys_scope_delete>
+        <sys_update_name>sys_script_include_88c570d22fe46110b66ad3f62799b63f</sys_update_name>
+        <sys_update_version display_value="sys_script_include_88c570d22fe46110b66ad3f62799b63f">f4c4c9122f286110b66ad3f62799b614</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-25 05:40:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

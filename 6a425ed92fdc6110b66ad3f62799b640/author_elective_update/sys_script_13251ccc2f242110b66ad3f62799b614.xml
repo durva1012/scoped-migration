@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>false</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_852107_enterpr_0_governance_item</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_852107_enterpr_0_governance_item">u_choice_34=yes^u_choice_36ANYTHING^u_choice_36ANYTHING^u_choice_35ANYTHING^u_choice_33ANYTHING^u_choice_32ANYTHING^u_choice_29ANYTHING^u_choice_31ANYTHING^u_choice_30ANYTHING^EQ<item display_value="Yes" endquery="false" field="u_choice_34" goto="false" newquery="false" operator="=" or="false" value="yes"/>
+            <item display_value="-- None --" endquery="false" field="u_choice_36" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/>
+            <item display_value="-- None --" endquery="false" field="u_choice_36" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/>
+            <item display_value="-- None --" endquery="false" field="u_choice_35" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/>
+            <item display_value="-- None --" endquery="false" field="u_choice_33" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/>
+            <item display_value="-- None --" endquery="false" field="u_choice_32" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/>
+            <item display_value="-- None --" endquery="false" field="u_choice_29" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/>
+            <item display_value="-- None --" endquery="false" field="u_choice_31" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/>
+            <item display_value="-- None --" endquery="false" field="u_choice_30" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>status and asa result 1</name>
+        <order>200</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-17 10:18:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>13251ccc2f242110b66ad3f62799b614</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>status and asa result 1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_script_13251ccc2f242110b66ad3f62799b614</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-24 09:24:42</sys_updated_on>
+        <template>u_choice_13=non architecturally significant^u_choice_4=asa closed (not architecturally significant)^EQ</template>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=13251ccc2f242110b66ad3f62799b614"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</application>
+        <file_path/>
+        <instance_id>82c6b842dba857807e55d5b0cf961978</instance_id>
+        <instance_name>dev51043</instance_name>
+        <name>sys_script_13251ccc2f242110b66ad3f62799b614</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_852107_enterpr_0_governance_item&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_852107_enterpr_0_governance_item"&gt;u_choice_34=yes^u_choice_36ANYTHING^u_choice_36ANYTHING^u_choice_35ANYTHING^u_choice_33ANYTHING^u_choice_32ANYTHING^u_choice_29ANYTHING^u_choice_31ANYTHING^u_choice_30ANYTHING^EQ&lt;item display_value="Yes" endquery="false" field="u_choice_34" goto="false" newquery="false" operator="=" or="false" value="yes"/&gt;&lt;item display_value="-- None --" endquery="false" field="u_choice_36" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/&gt;&lt;item display_value="-- None --" endquery="false" field="u_choice_36" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/&gt;&lt;item display_value="-- None --" endquery="false" field="u_choice_35" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/&gt;&lt;item display_value="-- None --" endquery="false" field="u_choice_33" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/&gt;&lt;item display_value="-- None --" endquery="false" field="u_choice_32" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/&gt;&lt;item display_value="-- None --" endquery="false" field="u_choice_29" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/&gt;&lt;item display_value="-- None --" endquery="false" field="u_choice_31" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/&gt;&lt;item display_value="-- None --" endquery="false" field="u_choice_30" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;status and asa result 1&lt;/name&gt;&lt;order&gt;200&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-01-17 10:18:40&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;13251ccc2f242110b66ad3f62799b614&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;status and asa result 1&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0"&gt;6a425ed92fdc6110b66ad3f62799b640&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Enterprise Governance Architecture"&gt;6a425ed92fdc6110b66ad3f62799b640&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_13251ccc2f242110b66ad3f62799b614&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-01-24 09:24:42&lt;/sys_updated_on&gt;&lt;template&gt;u_choice_13=non architecturally significant^u_choice_4=asa closed (not architecturally significant)^EQ&lt;/template&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=13251ccc2f242110b66ad3f62799b614"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1202061075</payload_hash>
+        <record_name>status and asa result 1</record_name>
+        <reverted_from/>
+        <source>2a425ed92fdc6110b66ad3f62799b642</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-24 09:24:42</sys_created_on>
+        <sys_id>da1e849e2f246110b66ad3f62799b606</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>185e3180d280000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-24 09:24:42</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>921e849e8a246110aeaa0f1cbcc32406</update_guid>
+        <update_guid_history>921e849e8a246110aeaa0f1cbcc32406:-1202061075,0f0d50c4d46421109c2aba6ed26b0642:1286618618,756bd4444b642110e5b45eda766ff200:-1535223303,b857d400446421103368b8e4a5a06206:894727277</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-25 06:16:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>02a83ead4bb3452bbd0302504d63b4e1</sys_id>
+        <sys_metadata>13251ccc2f242110b66ad3f62799b614</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>status and asa result 1</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_parent display_value="Governance Item">769c5a1e2f186510b66ad3f62799b6ba</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_scope_delete display_value="">d3f1171382404d42b1b1e4f5196360e4</sys_scope_delete>
+        <sys_update_name>sys_script_13251ccc2f242110b66ad3f62799b614</sys_update_name>
+        <sys_update_version display_value="sys_script_13251ccc2f242110b66ad3f62799b614">da1e849e2f246110b66ad3f62799b606</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-25 06:16:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

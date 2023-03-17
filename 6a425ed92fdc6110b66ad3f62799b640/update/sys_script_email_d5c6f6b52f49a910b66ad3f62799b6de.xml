@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>additional_comments</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+    // Add your code here
+    var latestcommentsare = current.u_string_1.getJournalEntry(1);
+    template.print(latestcommentsare);
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-17 04:57:30</sys_created_on>
+        <sys_id>d5c6f6b52f49a910b66ad3f62799b6de</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>additional_comments</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_script_email_d5c6f6b52f49a910b66ad3f62799b6de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-17 05:43:52</sys_updated_on>
+    </sys_script_email>
+</record_update>

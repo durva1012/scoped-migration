@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_852107_enterpr_0.sub_use</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>sub_use</name>
+        <script><![CDATA[var sub_use = Class.create();
+sub_use.prototype = {
+    abc: function(number) {
+        var a = new GlideRecord('x_852107_enterpr_0_governance_item');
+        a.addQuery('sys_id', number);
+        a.query();
+        while (a.next()) {
+            var we = new GlideRecord('sys_user_group');
+            we.addQuery('name', 'super_user');
+            we.query();
+            while (we.next()) {
+                if (gs.getUser().isMemberOf(we.sys_id) && gs.hasRole('x_852107_enterpr_0.super_admin')) {
+                    return true;
+                }
+                return false;
+            }
+        }
+    },
+    eng_status: function() {
+
+        var xyz = new GlideRecord('x_852107_enterpr_0_governance_item');
+        xyz.addQuery('sys_id', current.sys_id);
+        xyz.query();
+        while (xyz.next()) {
+            var we = new GlideRecord("x_852107_enterpr_0_engagement");
+            we.addQuery('u_reference_1', current.sys_id);
+            we.addQuery('u_choice_9', "approved");
+            we.query();
+            while (we.next()) {
+                current.u_choice_4 = 'completed (approved in forum)';
+                current.update();
+            }
+            var wee = new GlideRecord("x_852107_enterpr_0_engagement");
+            wee.addQuery('u_reference_1', current.sys_id);
+            wee.addQuery('u_choice_9', "not approved");
+            wee.query();
+            while (we.next()) {
+                current.u_choice_4 = 'completed (not approved in forum)';
+                current.update();
+            }
+        }
+    },
+
+    type: 'sub_use'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-11 08:26:26</sys_created_on>
+        <sys_id>a6ece0002fc9e110b66ad3f62799b63c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>sub_use</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_script_include_a6ece0002fc9e110b66ad3f62799b63c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-13 11:22:33</sys_updated_on>
+    </sys_script_include>
+</record_update>
